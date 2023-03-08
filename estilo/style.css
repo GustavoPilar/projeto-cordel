@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+:root {
+    --fonte1: verdana, geneva, tahoma, sans-serif;
+    --fonte2: 'passion one', cursive;
+    --fonte3: 'sriracha', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header h1 {
+    padding-top: 50px;
+    font-family: var(--fonte2);
+
+    font-size: 10vw;
+    /* 
+    o valor em vw significa view-width, ou seja, eu coloquei que o meu h1 do header fique com 10% do tamanho da minha largura, então se voce for mudando a sua largura ou ver em outro lugar como um celular, ele vai se auto-ajustando para que fique do tamanho certo. 
+    
+    !! Mas cuidado, essa não é a melhor opção para mexer com larguras menores ou maiores, pois podemos usar as medias queries, porém mais pra frente em outros projetos. !!
+    */
+
+    font-variant: small-caps;
+    /* 
+    A font-variant: small-caps; faz com que o meu texto fique com todas as letras maiúsculas, porém com a primeira letra de cada palavra grande
+    */
+}
+header p {
+    padding-bottom: 50px;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;    
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 2em;
+
+    font-size: 3.5vw;
+
+    line-height: 2;
+    /* 
+    Line-height é o espaçamento da linha entre a outra
+    */
+}
+
+section p {
+    padding-bottom: 2.5em;
+}
+
+.normal {
+    background-color: white;
+    color: black;
+}
+
+.imagem {
+    background-color: rgb(53, 53, 53);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+
+    box-shadow: inset 6px 6px 13px 0 rgba(0, 0, 0, 0.458);
+
+}
+
+    #img01 {background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+}
+
+#img02 {
+    background-image: url(../imagens/background002.jpg);
+    background-position: right center;
+}
+
+.imagem p {
+    background-color: rgba(0, 0, 0, 0.37);
+
+    display: inline-block;
+    /* 
+    transformei o background no fundo para que ela se adapte ao meu conteúdo, e assim não preciso colocar uma largura exata no meu paragráfo
+    */
+
+    padding: 10px;
+    text-shadow: 1px 1px 0 black;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
